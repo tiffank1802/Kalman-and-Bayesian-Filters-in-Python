@@ -57,7 +57,7 @@ def plot_correlated_data(X, Y, xlabel=None,
     plt.scatter(X, Y)
 
     if xlabel is not None:
-        plt.xlabel(xlabel);
+        plt.xlabel(xlabel)
 
     if ylabel is not None:
         plt.ylabel(ylabel)
@@ -91,7 +91,7 @@ def plot_gaussian(mu, variance,
 
 def display_stddev_plot():
     xs = np.arange(10,30,0.1)
-    var = 8;
+    var = 8
     stddev = math.sqrt(var)
     p2, = plt.plot (xs,[stats.gaussian(x, 20, var) for x in xs])
     x = 20+stddev
